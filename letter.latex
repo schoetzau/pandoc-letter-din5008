@@ -465,7 +465,7 @@ $endif$
 
 \setkomavar{opening}{Sehr geehrte Damen und Herren,}
 \setkomavar{closing}{Mit freundlichen Grüßen}
-\setkomavar*{enclseparator}{Anlagen}
+% \setkomavar*{enclseparator}{Anlagen}
 
 $for(letteroption)$
 \LoadLetterOption{$letteroption$}
@@ -478,7 +478,7 @@ $if(ccseparator)$\setkomavar{ccseparator}{$ccseparator$}$endif$
 $if(customer)$\setkomavar{customer}{$customer$}$endif$
 $if(date)$\setkomavar{date}{$date$}$endif$
 $if(emailseparator)$\setkomavar{emailseparator}{$emailseparator$}$endif$
-$if(enclseparator)$\setkomavar{enclseparator}{$enclseparator$}$endif$
+% $if(enclseparator)$\setkomavar{enclseparator}{$enclseparator$}$endif$
 $if(faxseparator)$\setkomavar{faxseparator}{$faxseparator$}$endif$
 $if(firstfoot)$\setkomavar{firstfoot}{$firstfoot$}$endif$
 $if(firsthead)$\setkomavar{firsthead}{$firsthead$}$endif$
@@ -512,7 +512,7 @@ $if(toname)$\setkomavar{toname}{$toname$}\KOMAoptions{toname=true}$endif$
 $if(yourmail)$\setkomavar{yourmail}{$yourmail$}$endif$
 $if(yourref)$\setkomavar{yourref}{$yourref$}$endif$
 $if(zipcodeseparator)$\setkomavar{zipcodeseparator}{$zipcodeseparator$}$endif$
-$if(enclseparator)$\setkomavar{enclseparator}{$enclseparator$}$endif$
+% $if(enclseparator)$\setkomavar{enclseparator}{$enclseparator$}$endif$
 $if(fromalign)$\KOMAoptions{fromalign=$fromalign$}$endif$
 $if(customername)$\setkomavar*{customer}{$customername$}$endif$
 $if(datename)$\setkomavar*{date}{$datename$}$endif$
@@ -522,7 +522,7 @@ $if(yourmailname)$\setkomavar*{yourmail}{$yourmailname$}$endif$
 $if(yourrefname)$\setkomavar*{yourref}{$yourrefname$}$endif$
 $if(opening)$\setkomavar{opening}{$opening$}$endif$
 $if(closing)$\setkomavar{closing}{$closing$}$endif$
-$if(enclseparator)$\setkomavar*{enclseparator}{$enclseparator$}$endif$
+% $if(enclseparator)$\setkomavar*{enclseparator}{$enclseparator$}$endif$
 % END OVERRIDES
 
 \begin{document}
@@ -590,7 +590,7 @@ $body$
 % OVERRIDES
 \closing{\usekomavar{closing}}
 $if(ps)$\ps{$ps$}$endif$
-$if(encl)$\encl{$encl$}$endif$
+$if(enclseparator)$\encl{$enclseparator$}$endif$
 % END OVERRIDES
 
 $if(has-frontmatter)$
